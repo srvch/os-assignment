@@ -1,0 +1,18 @@
+#include<bits/stdc++.h> 
+using namespace std; 
+
+struct Process 
+{ 
+    int pid;  
+    int bt;   
+    int priority; 
+}; 
+
+int main() 
+{ 
+    Process proc[] = {{1, 10, 3}, {2, 1, 1}, {3, 2, 4},{4, 1, 5}, {5, 5, 2}}; 
+
+    int n = sizeof proc / sizeof proc[0]; 
+    Pr_Sch(proc, n); 
+    return 0; 
+} 
